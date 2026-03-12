@@ -1,0 +1,185 @@
+/* --- Structure générale du header --- */
+header.top {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: Arial, sans-serif;
+    gap: 1rem; /* espace entre les blocs */
+}
+
+/* --- Bloc LOGO (petit, à gauche) --- */
+header.top .logo {
+    flex: 0 0 150px;        /* largeur fixe ou ajustable */
+    background: #f2f2f2;    /* pour visualiser le bloc (modifiable) */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    width: 50%; /* s’assure que le bloc prend toute la largeur disponible */
+    height: 80px; /* hauteur fixe pour le logo */
+}
+
+/* --- Bloc PUB  --- */
+header.top .pub {
+    flex: 1;                /* prend tout l’espace restant */
+    background: #e8e8e8;    /* pour visualiser le bloc (modifiable) */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: right;
+    width: 50%; /* s’assure que le bloc prend toute la largeur disponible */
+    height: 80px; /* hauteur fixe pour la pub */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* --- Navigation principale --- */
+nav.navigation {
+    background: #f8f8f8;              /* Léger contraste avec le header */
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;          /* Centrer le menu horizontalement */
+    align-items: center;
+}
+
+/* russia si tu ajoute un menu tu pux utilisez (ul/li)*/
+nav.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav.navigation li {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+nav.navigation li:hover {
+    color: #0077cc;                   /* Couleur d’accent modifiable plus tard */
+}
+
+
+
+
+/* --- RESET MODERNE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- STYLE GLOBAL --- */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header.top .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header.top .pub {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* --- NAVIGATION --- */
+nav.navigation {
+    background: #f8f8f8;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav.navigation li {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+nav.navigation li:hover {
+    color: #0077cc;
+}
+
+/* --- MAIN / CONTENU --- */
+main.contenu {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* Deux colonnes pour un layout moderne */
+    gap: 1.5rem;
+}
+
+/* --- SECTIONS GÉNÉRIQUES --- */
+main.contenu section {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* --- STYLES SPÉCIFIQUES (si tu veux personnaliser plus tard) --- */
+section.edito {
+    border-left: 4px solid #0077cc;
+}
+
+section.actus {
+    border-left: 4px solid #ff9800;
+}
+
+section.produits {
+    border-left: 4px solid #4caf50;
+}
+
+section.telechargement {
+    border-left: 4px solid #9c27b0;
+}
+
+/* --- FOOTER (si tu en ajoutes un plus tard) --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ffffff;
+    border-top: 1px solid #e5e5e5;
+    color: #666;
+    nav-left: inherit;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+}
